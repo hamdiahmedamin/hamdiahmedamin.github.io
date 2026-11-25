@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registre Santé — Gestion Clinique Hors Ligne</title>
+  <style>
+    :root {
+      --primary: #0F766E;
+      --primary-light: #0D9488;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --muted: #475569;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0F766E 0%, #0D9488 60%, #115E59 100%);
+      color: #FFFFFF;
+      padding: 48px 20px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 640px;
+    }
+    main {
+      padding: 32px 20px 56px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .links {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    a.btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+    a.btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--bg);
+    }
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--primary); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Application Android · Hors ligne</span>
+      <h1>Registre Santé</h1>
+      <p class="subtitle">
+        Application clinique mobile pour la gestion des cliniques, des dossiers patients,
+        des ordonnances médicales avec export PDF et du catalogue de médicaments, avec
+        sauvegarde locale et synchronisation optionnelle sur votre Google Drive personnel.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Multi-cliniques &amp; Patients</h2>
+        <p>
+          Organisez vos patients par clinique, avec suivi des pathologies, numéros de dossier
+          et de carnet, recherche rapide et filtres par catégorie.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Ordonnances &amp; Export PDF</h2>
+        <p>
+          Rédigez des ordonnances multi-médicaments depuis le catalogue partagé et générez
+          des documents PDF prêts à imprimer ou partager.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Catalogue de médicaments</h2>
+        <p>
+          Catalogue global partagé entre toutes vos cliniques avec posologies, durées
+          et catégories par défaut.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Sauvegarde &amp; Google Drive</h2>
+        <p>
+          Base SQLite stockée localement sur votre appareil. Exportez localement ou
+          sauvegardez dans un dossier dédié de votre propre Google Drive.
+        </p>
+      </article>
+    </section>
+
+    <section class="links">
+      <div class="nav-links">
+        <a class="btn btn-primary" href="privacy.html">Politique de confidentialité / Privacy Policy</a>
+        <a class="btn btn-outline" href="terms.html">Conditions d’utilisation / Terms of Service</a>
+      </div>
+      <div>
+        Support : <a href="mailto:hamdiahmedamin@gmail.com">hamdiahmedamin@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <strong>Registre Santé</strong> — Développé par Ahmed Amin Hamdi.
+        Aucune donnée patient n’est transmise à des serveurs tiers.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

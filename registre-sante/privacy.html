@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Registre Santé</title>
+  <style>
+    :root {
+      --primary: #0F766E;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --muted: #475569;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .topbar {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 20px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .topbar a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    main {
+      padding: 28px 20px 56px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 8px 0 4px;
+      font-size: 1.75rem;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.15rem;
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: var(--muted);
+    }
+    code {
+      background: #F1F5F9;
+      color: var(--text);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.88);
+      margin: 0;
+    }
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+    .nav a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a href="index.html">← Registre Santé</a>
+      <h1>Politique de confidentialité / Privacy Policy</h1>
+      <p class="meta">Dernière mise à jour / Last updated : 25 novembre 2026</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1. Stockage local et confidentialité des données</h2>
+      <p>
+        <strong>Registre Santé</strong> fonctionne hors ligne par défaut. Toutes les données saisies
+        (cliniques, dossiers patients, ordonnances, catalogue de médicaments) sont enregistrées
+        uniquement dans une base SQLite locale sur votre appareil.
+      </p>
+      <ul>
+        <li>Aucun serveur développeur ne reçoit, ne stocke ni ne traite vos données.</li>
+        <li>Aucune télémétrie, aucun traceur publicitaire, aucune vente ou partage de données à des tiers.</li>
+      </ul>
+
+      <h2>2. Connexion Google &amp; Sauvegarde Google Drive (optionnel)</h2>
+      <p>
+        Si vous choisissez d’utiliser la synchronisation Google Drive dans l’écran
+        <em>Sauvegarde &amp; Google Drive</em>, l’application utilise Google Sign-In avec
+        l’autorisation minimale <code>https://www.googleapis.com/auth/drive.file</code> :
+      </p>
+      <ul>
+        <li>
+          <strong>Portée limitée :</strong> l’application accède uniquement au dossier
+          <code>Registre Santé</code> qu’elle crée dans votre Google Drive et aux fichiers de
+          sauvegarde (<code>.db</code>) créés par l’application elle-même. Elle ne peut lire,
+          modifier ou supprimer aucun autre fichier de votre Google Drive.
+        </li>
+        <li>
+          <strong>Utilisation des données :</strong> votre adresse e-mail et votre nom Google
+          servent uniquement à afficher le compte connecté dans l’interface ; vos sauvegardes
+          sont transférées directement entre votre appareil et votre Google Drive personnel.
+        </li>
+        <li>
+          <strong>Google API Services User Data Policy :</strong> l’utilisation et le transfert
+          des informations reçues des API Google respectent la
+          <em>Google API Services User Data Policy</em>, y compris les exigences d’utilisation
+          limitée (<em>Limited Use</em>).
+        </li>
+      </ul>
+
+      <h2>3. Contrôle et suppression des données</h2>
+      <ul>
+        <li>Vous pouvez vous déconnecter de Google Drive à tout moment depuis l’application.</li>
+        <li>
+          Vous pouvez révoquer l’accès de l’application à tout moment depuis
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">
+            myaccount.google.com/permissions
+          </a>.
+        </li>
+        <li>
+          Vous pouvez supprimer les fichiers de sauvegarde dans le dossier <code>Registre Santé</code>
+          de votre Google Drive et supprimer les données locales en désinstallant l’application.
+        </li>
+      </ul>
+
+      <h2>4. Contact</h2>
+      <p>
+        Pour toute question relative à la confidentialité :
+        <a href="mailto:hamdiahmedamin@gmail.com">hamdiahmedamin@gmail.com</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>English Summary (Privacy Policy)</h2>
+      <p>
+        <strong>Registre Santé</strong> is an offline-first clinical record management app. All
+        patient, clinic, medication, and prescription data is stored locally on the user's device
+        in an SQLite database. The app operates no external backend servers, includes no ads or
+        analytics, and never sells or shares user data.
+      </p>
+      <p>
+        <strong>Optional Google Drive Backup:</strong> When the user explicitly signs in with
+        Google, the app requests only the non-sensitive
+        <code>https://www.googleapis.com/auth/drive.file</code> scope to upload, list, and
+        restore SQLite database backups (<code>.db</code>) inside an app-created
+        <code>Registre Santé</code> folder in the user's own Google Drive. The app cannot access
+        any other files on the user's Drive.
+      </p>
+      <p>
+        <strong>Limited Use &amp; Revocation:</strong> Registre Santé's use of information received
+        from Google APIs adheres to the Google API Services User Data Policy, including the Limited
+        Use requirements. Users can sign out in-app, delete Drive backups directly in Google Drive,
+        or revoke access at
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">
+          myaccount.google.com/permissions
+        </a>.
+      </p>
+      <p>
+        Contact: <a href="mailto:hamdiahmedamin@gmail.com">hamdiahmedamin@gmail.com</a>
+      </p>
+    </section>
+
+    <div class="nav">
+      <a href="index.html">Accueil / Home</a>
+      <a href="terms.html">Conditions d’utilisation / Terms of Service</a>
+    </div>
+  </main>
+</body>
+</html>
